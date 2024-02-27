@@ -27,4 +27,5 @@ urlpatterns = [
     path(f'{base_url}restroom/', include('restroom.urls')),
     path(f'{base_url}rating/', include('rating.urls')),
     path(f'{base_url}review/', include('review.urls')),
+    path(f'{base_url}tag/', include('tag.urls')),
 ]
