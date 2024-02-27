@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Restroom
 from django.db.models import Avg
 from review.serializers import ReviewSerializer
+from tag.serializers import TagSerializer
 
 
 class RestroomSerializer(serializers.ModelSerializer):
@@ -18,3 +19,4 @@ class RestroomSerializer(serializers.ModelSerializer):
 
 class RestroomGETSerializer(RestroomSerializer):
     reviews = ReviewSerializer(many=True)
+    tags = TagSerializer(many=True)
