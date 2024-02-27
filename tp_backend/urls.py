@@ -25,4 +25,5 @@ urlpatterns = [
     path(f'{base_url}user/', include('user.urls')),
     path(f'{base_url}building/', include('building.urls')),
     path(f'{base_url}restroom/', include('restroom.urls')),
+    path(f'{base_url}rating/', include('rating.urls')),
 ]
