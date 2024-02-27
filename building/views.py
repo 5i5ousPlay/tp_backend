@@ -15,7 +15,6 @@ class BuildingCreateView(generics.CreateAPIView):
 class BuildingListView(generics.ListAPIView):
     queryset = Building.objects.all()
     serializer_class = BuildingSerializer
-    permission_classes = [IsAuthenticated]
 
 
 class BuildingDetailView(generics.RetrieveUpdateAPIView):
