@@ -4,8 +4,11 @@ from restroom.serializers import RestroomSerializer
 
 
 class BuildingSerializer(serializers.ModelSerializer):
-    restrooms = RestroomSerializer(many=True)
 
     class Meta:
         model = Building
-        fields = ['id', 'name', 'description', 'restrooms']
+        fields = "__all__"
+
+
+class BuildingGETSerializer(BuildingSerializer):
+    restrooms = RestroomSerializer(many=True)
