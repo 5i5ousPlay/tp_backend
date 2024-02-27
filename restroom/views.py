@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from .models import Restroom
 from .serializers import RestroomSerializer
 
@@ -15,7 +15,6 @@ class RestroomCreateView(generics.CreateAPIView):
 class RestroomListView(generics.ListAPIView):
     queryset = Restroom.objects.all()
     serializer_class = RestroomSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
 
 
 class RestroomDetailView(generics.RetrieveUpdateAPIView):
