@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'building',
     'rating',
     'restroom',
+    'review',
 ]
 
 MIDDLEWARE = [
