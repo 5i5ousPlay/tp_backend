@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.permissions import IsAdminUser, IsAuthenticated, AllowAny
 from .models import Building
 from .serializers import BuildingSerializer
 
@@ -15,14 +15,18 @@ class BuildingCreateView(generics.CreateAPIView):
 class BuildingListView(generics.ListAPIView):
     queryset = Building.objects.all()
     serializer_class = BuildingSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
 
 
 class BuildingDetailView(generics.RetrieveUpdateAPIView):
     queryset = Building.objects.all()
     serializer_class = BuildingSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
     lookup_field = 'pk'
+
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return [AllowAny()]
+        else:
+            return [IsAuthenticated(), IsAdminUser()]
 
 
 class BuildingDeleteView(generics.DestroyAPIView):
