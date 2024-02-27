@@ -24,9 +24,9 @@ class RatingDetailView(generics.RetrieveUpdateAPIView):
 
     def get_permissions(self):
         if self.request.method == 'GET':
-            self.permission_classes = [IsAuthenticated]
+            return [IsAuthenticated()]
         else:
-            self.permission_classes = [IsAuthenticated, IsAdminUser]
+            return [IsAuthenticated(), IsAdminUser()]
 
 
 class RatingDeleteView(generics.DestroyAPIView):
