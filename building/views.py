@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.permissions import IsAdminUser, IsAuthenticated, AllowAny
 from .models import Building
 from .serializers import BuildingSerializer
 
@@ -24,7 +24,7 @@ class BuildingDetailView(generics.RetrieveUpdateAPIView):
 
     def get_permissions(self):
         if self.request.method == 'GET':
-            return [IsAuthenticated()]
+            return [AllowAny()]
         else:
             return [IsAuthenticated(), IsAdminUser()]
 
