@@ -6,7 +6,6 @@ from review.serializers import ReviewSerializer
 
 class RestroomSerializer(serializers.ModelSerializer):
     rating = serializers.SerializerMethodField(method_name='get_rating')
-    reviews = ReviewSerializer(many=True)
 
     class Meta:
         model = Restroom
@@ -15,3 +14,7 @@ class RestroomSerializer(serializers.ModelSerializer):
     def get_rating(self, obj):
         rating = obj.ratings.aggregate(Avg("rating", default=0))
         return rating['rating__avg']
+
+
+class RestroomGETSerializer(RestroomSerializer):
+    reviews = ReviewSerializer(many=True)
