@@ -15,14 +15,19 @@ class BuildingCreateView(generics.CreateAPIView):
 class BuildingListView(generics.ListAPIView):
     queryset = Building.objects.all()
     serializer_class = BuildingSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated]
 
 
 class BuildingDetailView(generics.RetrieveUpdateAPIView):
     queryset = Building.objects.all()
     serializer_class = BuildingSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
     lookup_field = 'pk'
+
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return [IsAuthenticated()]
+        else:
+            return [IsAuthenticated(), IsAdminUser()]
 
 
 class BuildingDeleteView(generics.DestroyAPIView):
