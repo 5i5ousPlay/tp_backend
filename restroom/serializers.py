@@ -1,10 +1,12 @@
 from rest_framework import serializers
 from .models import Restroom
 from django.db.models import Avg
+from review.serializers import ReviewSerializer
 
 
 class RestroomSerializer(serializers.ModelSerializer):
     rating = serializers.SerializerMethodField(method_name='get_rating')
+    reviews = ReviewSerializer(many=True)
 
     class Meta:
         model = Restroom
