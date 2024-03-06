@@ -45,11 +45,13 @@ INSTALLED_APPS = [
     'restroom',
     'review',
     'tag',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,13 +59,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = ['http://localhost:8080/']
+
 ROOT_URLCONF = 'tp_backend.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -91,7 +94,6 @@ DATABASES = {
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
     },
-
 }
 
 
@@ -144,4 +146,12 @@ REST_FRAMEWORK = {
     )
 }
 
-DEFAULT_TAGS = ['Bidet', 'No Bidet', 'Male', 'Female', 'PWD', 'All Faculty', 'Non Faculty']
+DEFAULT_TAGS = [
+    'Bidet',
+    'No Bidet',
+    'Male',
+    'Female',
+    'PWD',
+    'All Faculty',
+    'Non Faculty',
+]
