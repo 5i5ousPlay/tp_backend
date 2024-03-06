@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'building',
     'rating',
     'restroom',
+    'review',
+    'tag',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +143,5 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+DEFAULT_TAGS = ['Bidet', 'No Bidet', 'Male', 'Female', 'PWD', 'All Faculty', 'Non Faculty']
