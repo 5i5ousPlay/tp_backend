@@ -1,0 +1,47 @@
+[
+{
+    "model": "restroom.restroom",
+    "pk": "0ad96e5a-c2b0-45d6-a300-ec56b1bcf067",
+    "fields": {
+        "name": "PWD Only Bathroom",
+        "description": "No description",
+        "building": "5dc24992-71ab-4d86-aa20-2db6ffbec0c8"
+    }
+},
+{
+    "model": "restroom.restroom",
+    "pk": "60b0f940-8522-4647-98dd-ed59ce5f10d4",
+    "fields": {
+        "name": "Third Floor Female Bathroom",
+        "description": "This is the third floor female bathroom.",
+        "building": "63236b81-e3a1-47e1-9ca4-c9554241f4e0"
+    }
+},
+{
+    "model": "restroom.restroom",
+    "pk": "72670548-630f-462d-8da7-a6220f028c86",
+    "fields": {
+        "name": "SEC C Normal Men's Bathroom",
+        "description": "for the men",
+        "building": "435762fe-953d-490d-8f26-c9083a094eab"
+    }
+},
+{
+    "model": "restroom.restroom",
+    "pk": "8e039003-2778-4a4b-83dc-e8475f6c1001",
+    "fields": {
+        "name": "Another restroom at bel",
+        "description": "Bruh",
+        "building": "63236b81-e3a1-47e1-9ca4-c9554241f4e0"
+    }
+},
+{
+    "model": "restroom.restroom",
+    "pk": "f49054af-c5d9-43e3-843f-c3b44a88f84b",
+    "fields": {
+        "name": "SEC A Crazy Bidet Bathroom",
+        "description": "This bathroom is known for its' bidet strength.",
+        "building": "e46acf3a-1083-47ea-ba77-60f9e297e8dd"
+    }
+}
+]

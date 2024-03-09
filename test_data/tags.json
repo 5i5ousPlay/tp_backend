@@ -1,0 +1,75 @@
+[
+{
+    "model": "tag.tag",
+    "pk": "3608ad39-5dc6-494d-a994-4c12aa436449",
+    "fields": {
+        "creator": "b4f8408e-4614-407f-ab05-9d80908d314c",
+        "name": "Non Faculty",
+        "restroom": [
+            "8e039003-2778-4a4b-83dc-e8475f6c1001",
+            "f49054af-c5d9-43e3-843f-c3b44a88f84b",
+            "60b0f940-8522-4647-98dd-ed59ce5f10d4",
+            "72670548-630f-462d-8da7-a6220f028c86",
+            "0ad96e5a-c2b0-45d6-a300-ec56b1bcf067"
+        ]
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "4e242a54-f485-48d6-93f0-6b146d954cde",
+    "fields": {
+        "creator": null,
+        "name": "No Bidet",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "7ffa6f77-fa58-429e-9f8c-35395d4afb3c",
+    "fields": {
+        "creator": null,
+        "name": "Male",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "e9a38d6c-aab5-4fb1-9e13-8c541562a1d9",
+    "fields": {
+        "creator": null,
+        "name": "All Faculty",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "ee2f141b-dedc-4106-8b2d-85a6c45aa84f",
+    "fields": {
+        "creator": "20cc4dfe-e1a4-4809-887d-d69c4c1a6961",
+        "name": "Female",
+        "restroom": [
+            "60b0f940-8522-4647-98dd-ed59ce5f10d4"
+        ]
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "ef0ce86c-02cb-4de7-9db4-be70504138a6",
+    "fields": {
+        "creator": null,
+        "name": "Bidet",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "fe0f5a2f-3817-4826-9c74-b87d6649e820",
+    "fields": {
+        "creator": "efcd550d-793c-4e23-9be9-8eef86010f7c",
+        "name": "PWD",
+        "restroom": [
+            "0ad96e5a-c2b0-45d6-a300-ec56b1bcf067"
+        ]
+    }
+}
+]

@@ -1,0 +1,122 @@
+[
+{
+    "model": "rating.rating",
+    "pk": "2235a83d-11e0-45c9-b913-b9a4af4c4dd6",
+    "fields": {
+        "rating": 4.3,
+        "restroom": "8e039003-2778-4a4b-83dc-e8475f6c1001"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "584febd9-e7cc-4bba-9c85-0eace71ff696",
+    "fields": {
+        "rating": 3.4,
+        "restroom": "8e039003-2778-4a4b-83dc-e8475f6c1001"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "7e0fde80-149c-4642-9c12-a611144d2fc3",
+    "fields": {
+        "rating": 4.3,
+        "restroom": "8e039003-2778-4a4b-83dc-e8475f6c1001"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "9ada696b-0759-40cd-a5da-f89aeee208d6",
+    "fields": {
+        "rating": 5.0,
+        "restroom": "f49054af-c5d9-43e3-843f-c3b44a88f84b"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "a2cae302-50db-4364-9ee2-dc53bf2f1cbf",
+    "fields": {
+        "rating": 2.2,
+        "restroom": "0ad96e5a-c2b0-45d6-a300-ec56b1bcf067"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "a44e2d6b-04a0-4844-b834-f15bd160bac0",
+    "fields": {
+        "rating": 5.0,
+        "restroom": "72670548-630f-462d-8da7-a6220f028c86"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "a45151f7-62ff-4027-809a-4a905b45be3a",
+    "fields": {
+        "rating": 5.0,
+        "restroom": "f49054af-c5d9-43e3-843f-c3b44a88f84b"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "a7f3e56b-d36e-46f4-9857-acf276a9517b",
+    "fields": {
+        "rating": 2.3,
+        "restroom": "60b0f940-8522-4647-98dd-ed59ce5f10d4"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "b69d07ea-2557-43a9-a73b-ccd518afee27",
+    "fields": {
+        "rating": 5.0,
+        "restroom": "f49054af-c5d9-43e3-843f-c3b44a88f84b"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "bddf2ad1-8f40-485a-b8c9-991843b1f7de",
+    "fields": {
+        "rating": 4.6,
+        "restroom": "f49054af-c5d9-43e3-843f-c3b44a88f84b"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "e248fce4-a602-49a7-9398-928da2330a27",
+    "fields": {
+        "rating": 3.0,
+        "restroom": "8e039003-2778-4a4b-83dc-e8475f6c1001"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "f0754861-f3f3-4c21-92e1-91f2851453cf",
+    "fields": {
+        "rating": 3.0,
+        "restroom": "60b0f940-8522-4647-98dd-ed59ce5f10d4"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "f20abf61-282d-480c-85ff-becead012a9b",
+    "fields": {
+        "rating": 1.2,
+        "restroom": "72670548-630f-462d-8da7-a6220f028c86"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "fc82963b-8f20-4c9f-ab83-e89a996cbdc6",
+    "fields": {
+        "rating": 4.7,
+        "restroom": "0ad96e5a-c2b0-45d6-a300-ec56b1bcf067"
+    }
+},
+{
+    "model": "rating.rating",
+    "pk": "fe69bd2d-b345-44b2-936f-123837f003f5",
+    "fields": {
+        "rating": 4.8,
+        "restroom": "72670548-630f-462d-8da7-a6220f028c86"
+    }
+}
+]

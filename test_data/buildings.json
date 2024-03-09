@@ -1,0 +1,34 @@
+[
+{
+    "model": "building.building",
+    "pk": "435762fe-953d-490d-8f26-c9083a094eab",
+    "fields": {
+        "name": "SEC C",
+        "description": "Third sec building I love sec c"
+    }
+},
+{
+    "model": "building.building",
+    "pk": "5dc24992-71ab-4d86-aa20-2db6ffbec0c8",
+    "fields": {
+        "name": "SEC B",
+        "description": "SEC B is a building as well."
+    }
+},
+{
+    "model": "building.building",
+    "pk": "63236b81-e3a1-47e1-9ca4-c9554241f4e0",
+    "fields": {
+        "name": "Bellarmine Hall",
+        "description": "Bellarmine very far"
+    }
+},
+{
+    "model": "building.building",
+    "pk": "e46acf3a-1083-47ea-ba77-60f9e297e8dd",
+    "fields": {
+        "name": "SEC A",
+        "description": "SEC A is a building"
+    }
+}
+]
