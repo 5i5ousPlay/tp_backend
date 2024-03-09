@@ -8,3 +8,6 @@ class Rating(models.Model):
     id = models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True)
     rating = models.FloatField()
     restroom = models.ForeignKey(Restroom, on_delete=models.CASCADE, related_name='ratings')
+
+    def __str__(self) -> str:
+        return f'[{self.restroom}] {self.rating}'
