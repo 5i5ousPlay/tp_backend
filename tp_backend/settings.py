@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_api_logger',
     'rest_framework',
     'user',
     'building',
@@ -59,11 +60,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'drf_api_logger.middleware.api_logger_middleware.APILoggerMiddleware',
 ]
 
 # CORS_ALLOWED_ORIGINS = ['http://localhost:8080']
 CORS_ORIGIN_WHITELIST = ['http://localhost:8080']
 CORS_ALLOW_CREDENTIALS = True
+DRF_API_LOGGER_DATABASE = True
 
 ROOT_URLCONF = 'tp_backend.urls'
 

@@ -1,0 +1,32 @@
+[
+{
+    "model": "review.review",
+    "pk": "64a333f0-2cfd-477b-a65f-0bd521b0e36b",
+    "fields": {
+        "restroom": "60b0f940-8522-4647-98dd-ed59ce5f10d4",
+        "author": "20cc4dfe-e1a4-4809-887d-d69c4c1a6961",
+        "content": "gago angas",
+        "rating": "f0754861-f3f3-4c21-92e1-91f2851453cf"
+    }
+},
+{
+    "model": "review.review",
+    "pk": "6c063ff6-a218-438d-bb5c-e023957b1ade",
+    "fields": {
+        "restroom": "0ad96e5a-c2b0-45d6-a300-ec56b1bcf067",
+        "author": "59ad4668-f218-4ed7-a81a-1082db27b32a",
+        "content": "pang pwd talaga",
+        "rating": "fc82963b-8f20-4c9f-ab83-e89a996cbdc6"
+    }
+},
+{
+    "model": "review.review",
+    "pk": "f2371cd6-a13e-492d-b6fe-da87931819bb",
+    "fields": {
+        "restroom": "8e039003-2778-4a4b-83dc-e8475f6c1001",
+        "author": "efcd550d-793c-4e23-9be9-8eef86010f7c",
+        "content": "layo nmn",
+        "rating": "584febd9-e7cc-4bba-9c85-0eace71ff696"
+    }
+}
+]

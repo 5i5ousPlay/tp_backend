@@ -1,0 +1,86 @@
+[
+{
+    "model": "user.customuser",
+    "pk": "20cc4dfe-e1a4-4809-887d-d69c4c1a6961",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$NaHQ8qMR5ryBwxXakM7dh9$hLAbKS2Jq7/Xl8zun2I+Jr4IeNcI5qWsAOnO3U0pdu4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "lay1",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": "59ad4668-f218-4ed7-a81a-1082db27b32a",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$CwoI5l8BQ2WrbZ7cg1OhGz$8peIl/wHORFuFx4o/bxmW9ygBT22li/3nQgMOueJfIc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "anthony1",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": "75a3f052-9285-4fe6-97df-3015deabfddc",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$pnhmNAdw6kqXfGCf2cVuKx$Yh221St9Ix20Y8jf2CrlmMfyE+e/zu2njfx8GkVgq5M=",
+        "last_login": "2024-03-09T08:05:34.483Z",
+        "is_superuser": true,
+        "username": "admin_one",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": "9d45a3f5-1f15-4955-b2d8-2fc0b08485e4",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$rASA9PL2uBLQ6FDkXJRhTv$IJTWa/Rf2abQ6h8JMg+kYgqBjYphyIM578IMPaozhRU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ian1",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": "b4f8408e-4614-407f-ab05-9d80908d314c",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$9hzC85BmqOMBiJDx7iljVL$DTQT7zQM0HfKEnX/9qFaEcBWo61e7qPeKxc0fVytqOk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "raul1",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": "efcd550d-793c-4e23-9be9-8eef86010f7c",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$qwNk00HgdaPoagsdNifqQ8$RsWyQNKkq7H87rn8o9CJRhETx1wqxqBiOYGMNtwjXHM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "justin1",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
