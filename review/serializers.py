@@ -1,14 +1,14 @@
 from rest_framework import serializers
 from django.db import transaction
 from .models import Review
-from rating.serializers import RatingSerializer
+from rating.serializers import ReviewRatingSerializer
 from rating.models import Rating
-from image.serializers import ImageSerializer, B64ImageSerializer
+from image.serializers import B64ImageSerializer
 from image.models import Image
 
 
 class ReviewSerializer(serializers.ModelSerializer):
-    rating = RatingSerializer()
+    rating = ReviewRatingSerializer()
     images = B64ImageSerializer(many=True)
 
     class Meta:
@@ -18,10 +18,11 @@ class ReviewSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         try:
             with transaction.atomic():
+                restroom = validated_data.get('restroom')
                 rating_data = validated_data.pop('rating')
                 images = validated_data.pop('images')
 
-                rating = Rating.objects.create(**rating_data)
+                rating = Rating.objects.create(restroom=restroom, **rating_data)
                 rating.save()
 
                 review = Review.objects.create(**validated_data)
