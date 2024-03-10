@@ -12,6 +12,9 @@ class TagCreateView(generics.CreateAPIView):
     serializer_class = TagSerializer
     permission_classes = [IsAuthenticated]
 
+    def perform_create(self, serializer):
+        serializer.save(creator=self.request.user)
+
 
 class TagListView(generics.ListAPIView):
     queryset = Tag.objects.all()
