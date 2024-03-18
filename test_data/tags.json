@@ -16,6 +16,15 @@
 },
 {
     "model": "tag.tag",
+    "pk": "462011fa-21aa-40f5-9f70-d75c1934aa35",
+    "fields": {
+        "creator": null,
+        "name": "Female",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
     "pk": "4e242a54-f485-48d6-93f0-6b146d954cde",
     "fields": {
         "creator": null,
@@ -25,10 +34,55 @@
 },
 {
     "model": "tag.tag",
+    "pk": "5762bd3b-4d53-45a4-b726-8507a2e480d8",
+    "fields": {
+        "creator": null,
+        "name": "Male",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "5f2f254a-9ce3-4895-af08-d7964b3986ac",
+    "fields": {
+        "creator": null,
+        "name": "All Faculty",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "7195acb0-18d2-4b55-847a-7b524485063e",
+    "fields": {
+        "creator": null,
+        "name": "PWD",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
     "pk": "7ffa6f77-fa58-429e-9f8c-35395d4afb3c",
     "fields": {
         "creator": null,
         "name": "Male",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "a8130c5d-592f-4f0a-a09e-c805e0d46314",
+    "fields": {
+        "creator": null,
+        "name": "Bidet",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "a8a180ef-af4a-4f80-a90c-4d171946ef44",
+    "fields": {
+        "creator": null,
+        "name": "Non Faculty",
         "restroom": []
     }
 },
@@ -58,6 +112,15 @@
     "fields": {
         "creator": null,
         "name": "Bidet",
+        "restroom": []
+    }
+},
+{
+    "model": "tag.tag",
+    "pk": "f437dc94-f5b7-41e2-9f69-da03ae8a106e",
+    "fields": {
+        "creator": null,
+        "name": "No Bidet",
         "restroom": []
     }
 },
