@@ -3,13 +3,13 @@ from django.db import transaction
 from .models import Review
 from rating.serializers import ReviewRatingSerializer
 from rating.models import Rating
-from image.serializers import B64ImageSerializer
+from image.serializers import ImageSerializer
 from image.models import Image
 
 
 class ReviewSerializer(serializers.ModelSerializer):
     rating = ReviewRatingSerializer()
-    images = B64ImageSerializer(many=True)
+    images = ImageSerializer(many=True)
 
     class Meta:
         model = Review
