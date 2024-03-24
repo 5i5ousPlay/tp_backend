@@ -18,3 +18,7 @@ DB_PORT = '5432'
 3. `python manage.py loaddata test_data/*`
 
 Congratulations!
+
+**For Back-End API Documentation please see:** https://taepare.atlassian.net/l/cp/pJvDz3cJ
+
+**Please make sure you have a Confluence acc and are in the Tae Pare Dev Team**

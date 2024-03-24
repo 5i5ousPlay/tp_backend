@@ -32,7 +32,7 @@
     "pk": "75a3f052-9285-4fe6-97df-3015deabfddc",
     "fields": {
         "password": "pbkdf2_sha256$720000$pnhmNAdw6kqXfGCf2cVuKx$Yh221St9Ix20Y8jf2CrlmMfyE+e/zu2njfx8GkVgq5M=",
-        "last_login": "2024-03-09T08:05:34.483Z",
+        "last_login": "2024-03-10T05:44:50.255Z",
         "is_superuser": true,
         "username": "admin_one",
         "is_active": true,
