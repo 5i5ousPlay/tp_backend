@@ -43,7 +43,3 @@ class ImageSerializer(serializers.ModelSerializer):
         self._validate_request_user(attrs)
 
         return attrs
-
-
-class B64ImageSerializer(ImageSerializer):
-    image = Base64ImageField()
