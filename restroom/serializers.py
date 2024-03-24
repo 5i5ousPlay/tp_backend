@@ -9,7 +9,7 @@ from image.models import Image
 
 class RestroomSerializer(serializers.ModelSerializer):
     rating = serializers.SerializerMethodField(method_name='get_rating')
-    images = ImageSerializer(many=True)
+    images = ImageSerializer(many=True, required=False)
 
     class Meta:
         model = Restroom
@@ -20,8 +20,9 @@ class RestroomSerializer(serializers.ModelSerializer):
         return rating['rating__avg']
 
     def create(self, validated_data):
-        images = validated_data.pop('images')
+        images = validated_data.pop('images', [])
         restroom = super().create(validated_data)
+
         for image_data in images:
             Image.objects.create(image=image_data['image'], restroom=restroom)
 
