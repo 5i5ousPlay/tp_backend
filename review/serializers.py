@@ -9,7 +9,7 @@ from image.models import Image
 
 class ReviewSerializer(serializers.ModelSerializer):
     rating = ReviewRatingSerializer()
-    images = ImageSerializer(many=True)
+    images = ImageSerializer(many=True, required=False)
 
     class Meta:
         model = Review
