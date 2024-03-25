@@ -14,7 +14,8 @@ class Image(models.Model):
     restroom = models.ForeignKey(Restroom, on_delete=models.CASCADE, null=True, related_name='images')
     review = models.ForeignKey(Review, on_delete=models.CASCADE, null=True, related_name='images')
     building = models.ForeignKey(Building, on_delete=models.CASCADE, null=True, related_name='images')
-    image = models.ImageField(upload_to=get_image_upload_path, max_length=255)
+    # image = models.ImageField(upload_to=get_image_upload_path, max_length=255)
+    image = models.ImageField(upload_to='images/', max_length=255)
     uploaded_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     uploaded_on = models.DateTimeField(auto_now_add=True, null=True)
 
