@@ -1,11 +1,11 @@
 from rest_framework import serializers
 from .models import CustomUser as User
-from review.serializers import ReviewSerializer
+from review.serializers import ReviewGETSerializer
 from core.utils.serializers import UserSerializer
 
 
 class UserProfileSerializer(UserSerializer):
-    reviews = ReviewSerializer(many=True)
+    reviews = ReviewGETSerializer(many=True)
 
     class Meta:
         model = User
