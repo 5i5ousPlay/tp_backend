@@ -3,7 +3,7 @@ from rest_framework import generics, status
 from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
 from rest_framework.response import Response
 from .models import Review
-from .serializers import ReviewSerializer
+from .serializers import ReviewSerializer, ReviewGETSerializer
 from .permissions import IsReviewAuthor, IsReviewAuthorOrIsAdmin
 
 
@@ -19,7 +19,7 @@ class ReviewCreateView(generics.CreateAPIView):
 
 class ReviewListView(generics.ListAPIView):
     queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
+    serializer_class = ReviewGETSerializer
     permission_classes = [AllowAny]
 
 
@@ -33,6 +33,12 @@ class ReviewDetailView(generics.RetrieveUpdateAPIView):
             return [AllowAny()]
         else:
             return [IsAuthenticated(), IsReviewAuthorOrIsAdmin()]
+
+    def get_serializer_class(self):
+        if self.request.method == 'GET':
+            return ReviewGETSerializer
+        else:
+            return ReviewSerializer
 
 
 class ReviewDeleteView(generics.DestroyAPIView):

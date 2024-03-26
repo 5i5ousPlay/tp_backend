@@ -5,6 +5,7 @@ from rating.serializers import ReviewRatingSerializer
 from rating.models import Rating
 from image.serializers import ImageSerializer
 from image.models import Image
+from core.utils.serializers import UserSerializer
 
 
 class ReviewSerializer(serializers.ModelSerializer):
@@ -52,3 +53,9 @@ class ReviewSerializer(serializers.ModelSerializer):
         except Exception as e:
             raise ValueError(str(e))
         return instance
+
+
+class ReviewGETSerializer(ReviewSerializer):
+    author = UserSerializer(read_only=True)
+    review = ReviewRatingSerializer(read_only=True)
+    images = ImageSerializer(read_only=True, many=True)
